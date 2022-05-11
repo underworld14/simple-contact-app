@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 
-export default function Card({ id, name, phone_number, address, isFavourite }) {
+export default function Card({ name, phone_number, address, isFavourite, addFavourite, removeFavourite }) {
   return (
     <div className={styles.card}>
       <div className={styles.nama}>
@@ -12,7 +12,9 @@ export default function Card({ id, name, phone_number, address, isFavourite }) {
       <div className={styles.adress}>
         <h4>{address}</h4>
       </div>
-      <button className={styles.btnCustom}>{isFavourite ? "❤️" : "🖤"}</button>
+      <button onClick={isFavourite ? removeFavourite : addFavourite} className={styles.btnCustom}>
+        {isFavourite ? "❤️" : "🖤"}
+      </button>
     </div>
   );
 }

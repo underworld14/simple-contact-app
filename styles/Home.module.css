@@ -1,5 +1,8 @@
 .container {
   padding: 0 2rem;
+}
+
+.contactsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
