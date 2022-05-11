@@ -1,0 +1,32 @@
+.card {
+  width: 15rem;
+  height: 18rem;
+  border: 0.5px solid #ccc;
+  margin: 1.2rem;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cover:hover {
+  background-color: #ccc;
+  border: 0.5px solid #fff;
+  cursor: pointer;
+}
+
+.nama {
+  font-size: 0.85rem;
+}
+
+.btnCustom {
+  border: none;
+  background-color: white;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.btnCustom:hover {
+  cursor: pointer;
+}
